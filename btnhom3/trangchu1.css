@@ -1,0 +1,709 @@
+:root
+{
+    --green-color: #29531B;
+    --lightgreen: #155F1C;
+    --gray-color: #FFFBFB;
+    --dark-gray: #F7F7F7;
+    --gray:#D9D9D9;
+    --light-blue:#E5F0F6;
+    --Yellowish: #D9DDC2;
+    --bright-blue: #DAEBFF;
+    --pink: #F6E3EF;
+    --bright-green:#EDF6E5;
+    --leek: #D1F1E6;
+    --apple-green:#60D36C;
+}
+body{
+    margin:0;
+    font-family: "Poppins",sans-serif;
+    box-sizing: border-box;
+    height: auto;
+}
+.wrapper{
+    max-width: 1440px;
+    margin: 0px auto;
+  
+}
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    width:1440px ;
+    top:0px ;
+    padding: 20px 0;
+    height: 80px;
+    color: var(--gray);
+    z-index: 100;
+    transition: all 500ms ease;
+    padding-top: 10px;
+
+
+}
+ nav.scrolled{
+    background: var(--gray-color) ;
+    box-shadow: 0 16px 14px -8px rgba(0,0,0,0.3);
+    border-radius:  0 0 8px 8px;
+    top: 0;
+    padding: 12px;
+
+ }
+p1{
+    font-family: 'Poppins',sans-serif;
+font-style: normal;
+font-weight: 900;
+font-size: 30px;
+line-height: 45px;
+
+color: #29531B;
+}
+nav ul{
+    display: flex;
+    align-items: center;
+    gap: 45px;
+    margin: 0;
+    list-style: none;
+}
+nav ul li a{
+    
+font-family: 'Poppins', sans-serif;
+font-weight: 500;
+font-size: 20px;
+color: #29531B;
+text-decoration: none;
+}
+/* Thanh chon 2*/
+.thanhchon2{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color:#D9D9D9;
+    height: 50px;
+    width: auto;
+}
+.thanhchon2 ul{
+    display: flex;
+    align-items: center;
+    gap: 45px;
+    margin: 0;
+    list-style: none;
+}
+.thanhchon2 ul li a{
+    font-family: 'Poppins', sans-serif;
+font-weight: 400;
+font-size: 20px;
+color:#000000;
+text-decoration: none;
+}
+/* danh sach san pham*/
+ul.products{
+    list-style: none;
+    display: flex;
+    flex-wrap:wrap ;
+    justify-content: space-between;
+}
+ul.products li .product-item{
+    flex-basis: 25%;
+    padding-left: 50px;
+    padding-right: 50px;
+    margin-bottom: 30px;
+}
+ul.products li a.product-thumb{
+    max-width: 100%;
+    width: 228px;
+    height: 304px;
+    top: 687px;
+    background-color: #F7F7F7;
+}
+ul.products li .product-infor{
+    padding: 10px 0;
+}
+ul.products li .product-infor a
+{
+    display: block;
+    text-decoration: none;
+
+}
+ul.products li .product-infor a.product-name{
+    color: #000000;
+    padding: 25px 0; 
+    text-align: center;
+}
+
+ul.products li .product-infor .product-price{
+    color: #E73939;
+    font-weight: 500;
+    text-align: center;
+
+}
+ul.products .product-item .producttop {
+    position: relative;
+    overflow: hidden;
+}
+ul.products .product-item .producttop .product-thumb{
+    display: block;
+}
+ul.products .product-item .producttop a.buy-now{
+    text-transform: uppercase;
+    text-decoration: none;
+    text-align: center;
+    display: block;
+    background-color:#5776C5 ;
+    color:#FFFFFF;
+    padding: 10px 0;
+    position:absolute;
+    bottom: -44px;
+    width: 100%;
+    transition: 0.30s ease-in-out;
+
+}
+ul.products li:hover a.buy-now {
+    top: 260px;
+}
+/* Hero section*/
+
+.hero-section{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-family: 'Poppins', sans-serif;
+    top: 50px;
+    font-weight: 200;
+    font-size: 36px;
+    line-height: 135px;
+     color: #000000;
+
+}
+.hero-section span{
+    color:#155F1C;
+}
+/* dang ky*/
+    .signin {
+        margin-left: 20px;
+        margin-top: 0px;
+        position: relative;
+        top: -70px;
+        left: 400px;
+ 
+
+    }
+    .signin  input{
+        font-family: 'Poppins', sans-serif;
+        font-weight: 200px;
+        font-size: 20px;
+        line-height: 30px;
+        color: #948484;
+        height: 45px;
+        border: none;
+        width: 536px;
+      
+
+    }
+    .signin .register{
+        position: absolute;
+        transform: translateY(-1%);
+        background: #000000;
+        padding: 8px 30px;
+        font-family: 'Poppins',sans-serif;
+        font-weight: 450;
+        font-size: 18px;
+        text-align: center;
+        color: #FFFFFF;
+        cursor: pointer;
+      
+
+    }
+/*footer*/
+footer{
+    background:var( --gray) ;
+    color: #000000;
+    padding: 9px 9px;
+    position: relative;
+    width: 100%;
+    height: 400px;
+    display: flex;
+    
+}
+footer h2{
+    font-family: 'Poppins',sans-serif;
+    font-weight: 650;
+    font-size: 30px;
+    color: #29531B;
+}
+footer .wrapper{
+    margin-right: 30px;
+    width: 40%;
+}
+footer a{
+    text-decoration: none;
+    color:#155F1C;   
+}
+
+footer .links2{
+    position: relative;
+    left: 650px;
+    bottom: 200px;
+}
+footer .links2 ul li{
+    list-style: none;
+    padding: 5px;
+}
+footer .links2 ul li a{
+    color: #000000;
+    text-decoration: none;
+    margin-bottom: 10px;
+    display:inline-table;
+}
+footer .links2 ul li a:hover{
+    color:#155F1C;
+}
+footer .links3{
+    position: relative;
+    left: 1000px;
+    bottom: 525px;
+}
+footer .links3 ul li{
+    list-style: none;
+    padding: 5px;
+}
+footer .links3 ul li a{
+    color: #000000;
+    text-decoration: none;
+    margin-bottom: 10px;
+    display:inline-table;
+}
+footer .links3 ul li a:hover{
+    color:#155F1C;
+}
+footer .social{
+   display: flex;
+   position:absolute;
+    left: 80%;
+    right: 18.33%;
+    top: 370px;
+    
+}
+ nav.mobile{
+    display: none;
+ }
+ .mobile-container{
+    display: none;
+ }
+
+/* phan may tinh bang*/
+@media(max-width:1024px)
+{
+    .mobile-container{
+        display: none;
+     }
+    
+    header, .hero-section, header .wrapper{
+        max-height: 1000px;
+    }
+    .hero-section{
+        height: 300px;
+        width: 670px;
+        background-color: var(--dark-gray);
+        border-radius: 30px;
+        margin-top: 55px;
+        margin-left: 10px;
+        margin-bottom: 5px;
+        border-right-width: 10px;
+        font-weight: 200;
+        font-size: 22px;
+        line-height: 55px;
+
+    }
+    .hero-section h1{
+        padding-left: 50px;
+         
+    }
+    .hero-section img{
+        width: 250px;
+        height: 250px;
+        padding-top: 42px;
+        padding-right: 10px;
+    }
+    nav{
+        left: 0;
+        right: 0;
+        padding: 10px 0px;
+        width: 700px;
+        height: 50px;
+        justify-content: left;
+    }
+    nav.scrolled{
+        padding: 6px 0px;
+    }
+    p1{
+        font-weight: 900;
+        font-size: 18px;
+        line-height: 25px;
+        width: 130px;
+    }
+    nav ul{
+        gap: 10px;
+    }
+    nav ul li a{
+        font-weight: 500px;
+        font-size: 11px;
+    }
+    nav img{
+        width: 8px;
+        height: 8px;
+    }
+    .thanhchon2{
+        width: 700px;
+        height: 30px;
+    }
+    .thanhchon2 ul{
+        gap: 15px;
+        margin: 0;
+        list-style: none;
+        padding-left: 10px;
+    }
+    .thanhchon2 ul li a{
+    font-weight: 500;
+    font-size: 10px;
+    }
+    /* san pham*/
+    .products{
+        width: 600px;
+    }
+    .products img{
+        width: 150px;
+        height: 160px;
+    }
+    ul.products li{
+        width: 250px;
+        height: 250px;
+    }
+    ul.products li .product-item{
+        flex-basis: 50%;
+        padding-left: 50px;
+        padding-right: 50px;
+        margin-bottom: 30px;
+    }
+    ul.products li a.product-thumb{
+        width: 170px;
+        height: 180px;
+        background-color: #F7F7F7;
+    }
+    ul.products li .product-infor a.product-name{
+        font-size: 12px;
+      padding-top: 5px;
+    padding-bottom: 5px;
+    }
+    
+    ul.products li .product-infor .product-price{
+        font-size: 12px;
+        width: 120px;
+    
+    }
+    ul.products .product-item .producttop {
+        position: relative;
+        overflow: hidden;
+    }
+    ul.products .product-item .producttop .product-thumb{
+        display: block;
+    }
+    ul.products .product-item .producttop a.buy-now{
+        text-transform: uppercase;
+        text-decoration: none;
+        text-align: center;
+        display: block;
+        background-color:#5776C5 ;
+        color:#FFFFFF;
+        padding: 4px 0;
+        position:absolute;
+        bottom: -35px;
+        width: 170px;
+        transition: 0.30s ease-in-out;
+        font-size: 12px;
+    
+    }
+    ul.products li:hover a.buy-now {
+        top: 150px;
+    }
+    /* dang ky*/
+    .anhdk{
+        width: 700px;
+        height: 100px;
+        backface-visibility: hidden;
+    }
+    .signin  {
+        display: none;
+    }
+    /* footer */
+
+    footer{
+        height: auto;
+        width: auto;
+
+    }
+    footer h2{
+        font-size: 20px;
+    }
+    footer h3{
+        font-size: 12px;
+    }
+    footer .vector2{
+        font-size: 13px;
+    }
+    footer .links2{
+        position:static;
+    }
+    footer .links2 ul li{
+        padding: 2px 0;
+        font-size: 10px;
+
+    }
+    footer .links3{
+        position: static;
+    }
+    footer .links3 ul li{
+        padding: 2px 0;
+        font-size: 10px;
+    }
+    footer .social{
+       position:relative;
+        left: 80%;
+        right: 18.33%;
+        top: 0px;
+}
+    footer .social img{
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+    nav.mobile{
+        display: none;
+    }
+}
+@media( max-width: 500px)
+{
+    nav{
+        display: none;
+    }
+    nav.mobile{
+        display: flex;
+    }
+    nav.mobile .menu-icon{
+        padding-left: 10px;
+        margin-left: 10px;
+    }
+    nav.mobile .logo{
+        font-size: 20px;
+        color: var(--green-color);
+        font-weight: 1000px;
+    }
+    nav.mobile.scrolled{
+        padding:  0px 10px;
+        background-color: var(--dark-gray);
+        box-shadow:  0 9px 21px -5px rgba(0,0,0,0.3);
+    }
+    .mobile-container{
+        position: fixed;
+        height:100vh;
+        width: 100%;
+        top: 0;
+        left: 100%;
+        background-color: #000000;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        z-index: 200;
+        transition: all 400ms ease;
+
+    }
+    .mobile-container.active{
+        left: 0;
+    }
+    .mobile-container .close-icon{
+        position: fixed;
+        top: 30px;
+       right: 10px;
+       opacity: 0;
+       margin-left: 50px;
+        padding-left: 100px;
+       pointer-events: none;
+       transition: all 400ms ease;
+
+    }
+    .mobile-container.active .close-icon{
+        opacity: 1;
+        pointer-events: auto;
+    }
+    .mobile-container ul{
+        list-style: none;
+        padding: 0;
+        margin-right: 150px;
+        padding-right: 150px;
+        border-bottom-width: 50px;
+        padding-bottom: 100px;
+    }
+    .mobile-container ul li{
+        margin: 30px 0;
+        text-align: center;
+    }
+    .mobile-container ul li a{
+        color: #FFFFFF;
+        text-decoration: none;
+        font-size: 13px;
+    }
+    header, .hero-section, header .wrapper{
+        max-height: 1000px;
+    }
+    .hero-section{
+        height: 180px;
+        width: auto;
+        font-weight: 200;
+        font-size: 13px;
+        line-height: 45px;
+
+    }
+    .hero-section h1{
+        padding-left: 10px;
+         
+    }
+    .hero-section img{
+        width: 150px;
+        height: 150px;
+        padding-top: 42px;
+        padding-right: 10px;
+    }
+    nav{
+        left: 0;
+        right: 0;
+        padding: 10px 0px;
+        width: 480px;
+        height: 50px;
+        position: fixed;
+    }
+    nav.scrolled{
+        padding: 6px 0px;
+    }
+    .thanhchon2{
+        width: auto;
+        height:auto;
+    }
+    .thanhchon2 ul{
+        gap: 5px;
+        list-style: none;
+        padding-left: 10px;
+    }
+    .thanhchon2 ul li a{
+    font-weight: 450;
+    font-size: 6px;
+    }
+    /* san pham*/
+    .products{
+        width: auto;
+    }
+    .products img{
+        width: 136px;
+        height: 150px;
+    }
+    ul.products li{
+        width: 250px;
+        height: 250px;
+    }
+    ul.products li .product-item{
+        flex-basis: 100%;
+        padding-left: 50px;
+        padding-right: 50px;
+        margin-bottom: 30px;
+    }
+    ul.products li a.product-thumb{
+        width: 140px;
+        height: 160px;
+        background-color: #F7F7F7;
+    }
+    ul.products li .product-infor a.product-name{
+        font-size: 12px;
+      width: 150px;
+      padding-top: 5px;
+    padding-bottom: 5px;
+    }
+    
+    ul.products li .product-infor .product-price{
+        font-size: 12px;
+        width: 150px;
+    
+    }
+    ul.products .product-item .producttop {
+        position: relative;
+        overflow: hidden;
+    }
+    ul.products .product-item .producttop .product-thumb{
+        display: block;
+    }
+    ul.products .product-item .producttop a.buy-now{
+        text-transform: uppercase;
+        text-decoration: none;
+        text-align: center;
+        display: block;
+        background-color:#5776C5 ;
+        color:#FFFFFF;
+        padding: 4px 0;
+        position:absolute;
+        bottom: -35px;
+        width: 140px;
+        transition: 0.30s ease-in-out;
+        font-size: 12px;
+    
+    }
+    ul.products li:hover a.buy-now {
+        top: 120px;
+    }
+    /* dang ky*/
+    .anhdk{
+        width: auto;
+        height: 100px;
+        backface-visibility: hidden;
+    }
+    .signin  {
+        display: none;
+    }
+    /* footer */
+
+    footer{
+        height: auto;
+        width: auto;
+
+    }
+    footer h2{
+        font-size: 20px;
+    }
+    footer h3{
+        font-size: 12px;
+    }
+    footer .vector2{
+        font-size: 13px;
+    }
+    footer .links2{
+        position:static;
+    }
+    footer .links2 ul li{
+        padding: 2px 0;
+        font-size: 10px;
+
+    }
+    footer .links3{
+        position: static;
+    }
+    footer .links3 ul li{
+        padding: 2px 0;
+        font-size: 10px;
+    }
+    footer .social{
+       position:relative;
+        left: 50%;
+        right: 20.33%;
+        top: 0px;
+}
+    footer .social img{
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+
+}

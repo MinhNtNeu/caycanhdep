@@ -1,0 +1,704 @@
+:root
+{
+    --green-color: #29531B;
+    --lightgreen: #155F1C;
+    --gray-color: #FFFBFB;
+    --dark-gray: #F7F7F7;
+    --gray:#D9D9D9;
+    --light-blue:#E5F0F6;
+    --Yellowish: #D9DDC2;
+    --bright-blue: #DAEBFF;
+    --pink: #F6E3EF;
+    --bright-green:#EDF6E5;
+    --leek: #D1F1E6;
+    --apple-green:#60D36C;
+}
+body{
+    margin:0;
+    font-family: "Poppins",sans-serif;
+    box-sizing: border-box;
+    height: auto;
+}
+.wrapper{
+    max-width: 1440px;
+    margin: 0px auto;
+  
+}
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    width:1440px ;
+    top:10px ;
+    height: 80px;
+    color: #FFFBFB;
+    z-index: 100;
+
+
+}
+p1{
+    font-family: 'Poppins',sans-serif;
+font-style: normal;
+font-weight: 900;
+font-size: 30px;
+line-height: 45px;
+
+color: #29531B;
+}
+nav ul{
+    display: flex;
+    align-items: center;
+    gap: 45px;
+    margin: 0;
+    list-style: none;
+}
+nav ul li a{
+    
+font-family: 'Poppins', sans-serif;
+font-weight: 500;
+font-size: 20px;
+color: #29531B;
+text-decoration: none;
+}
+ .cuahang{
+   
+    background-color: #D1F1E6;
+    text-decoration: none;
+    position: absolute;
+    top: 110px;
+    width: 100%;
+    height: 98px;
+}
+.cuahang h3{
+    text-decoration: none;
+    position:relative;
+    display: flex;
+    font-family: 'Poppins',sans-serif;
+    font-size: 32px;
+    line-height: 48px;
+    left: 50%;
+    top: -30px;
+    color: #000000;
+}
+ .cuahang ul h4{
+    
+    position: absolute;
+    text-decoration: none;
+    list-style: none;
+    display: flex;
+    font-family: 'Poppins',sans-serif;
+    font-size: 32px;
+    line-height: 48px;
+    left: 45%;
+    top: 5px;
+    color: #000000;
+ }
+ .cuahang ul .anh1{
+    position: absolute;
+    left: 0%;
+    top: 0px;
+    height: 98px;
+    transform: matrix(-1, 0, 0, 1, 0, 0);
+}
+.cuahang ul .anh2{
+    position: absolute;
+    height: 98px;
+    right: 0%;
+    top: 0px;
+}
+/* het phan cua hang*/
+.left {
+    position:absolute;
+    flex-grow: 1;
+    flex-basis: 0;
+    order: 1;
+    top: 45%;
+}
+.left .danhmuc{
+    background-color:#F7F7F7;
+    height: 450px;
+    width: 300px;
+}
+.left .danhmuc ul  
+{
+    align-items: center;
+    margin: 0;
+    list-style: none;
+    text-align: center;
+    left: 0px;
+}
+.left .danhmuc ul li {
+    margin: 16px;
+}
+.left h3{
+    text-align: center;
+    font-size: 24px;
+    font-weight: 600;
+}
+.left .danhmuc ul li a{
+    color: #000000;
+    text-decoration: none;
+    align-items: center;
+    font-weight: 500;
+    font-size: 23px;
+    margin: 10px;
+}
+.left .danhmuc img{
+    position: absolute;
+    left: 0px;
+    top: 280px;
+
+}
+.left .danhmuc ul li a:hover {
+    color:#29531B;
+}
+/* Het phan danh muc*/
+.left .sanpham{
+    background-color:#F7F7F7;
+    height: 550px;
+    width: 300px;
+}
+.left .sanpham li .item{
+    list-style: none;
+    display: flex;
+    justify-content:space-around;
+    background-color:#E8ECE6;
+}
+.left .sanpham ul li {
+    height: 100px;
+    padding-right: 10px;
+    list-style: none;
+}
+.left .sanpham ul li .product-infor{
+    padding: 15px 5px;
+}
+.left .sanpham ul li .product-infor a{
+    text-decoration:none;
+}
+.left .sanpham ul li .product-infor a.product-name{
+    color: #000000;
+    text-align: center;
+}
+.left .sanpham ul li .product-infor  .product-price{
+    color: #E73939;
+    font-weight: 500;
+    text-align: center;
+}
+/* Danh sach san pham*/
+ul.products{
+    list-style: none;
+    display: flex;
+    flex-wrap:wrap ;
+    justify-content: space-between;
+    width: 1200px;
+    height: 1400px;
+    padding-left: 330px;
+    padding-top: 313px;
+}
+ul.products li .product-item{
+    flex-basis: 33,33%;
+    padding-left: 55px;
+    padding-right: 50px;
+    margin-bottom: 35px;
+}
+ul.products li a.product-thumb{
+    max-width: 100%;
+    width: 228px;
+    height: 304px;
+    top: 687px;
+    background-color: #F7F7F7;
+}
+ul.products li .product-infor{
+    padding: 5px 0;
+}
+ul.products li .product-infor a
+{
+    display: block;
+    text-decoration: none;
+
+}
+ul.products li .product-infor a.product-name{
+    color: #000000;
+    padding: 15px 0; 
+    text-align: center;
+    font-size: 21px;
+    font-weight: 500;
+}
+
+ul.products li .product-infor .product-price{
+    color: #E73939;
+    font-weight: 500;
+    text-align: center;
+    font-size: 21px;
+
+}
+ul.products .product-item .producttop {
+    position: relative;
+    overflow: hidden;
+}
+ul.products .product-item .producttop .product-thumb{
+    display: block;
+}
+ul.products .product-item .producttop a.buy-now{
+    text-transform: uppercase;
+    text-decoration: none;
+    text-align: center;
+    display: block;
+    background-color:#5776C5 ;
+    color:#FFFFFF;
+    padding: 10px 0;
+    position:absolute;
+    bottom: -44px;
+    width: 100%;
+    transition: 0.30s ease-in-out;
+
+}
+ul.products li:hover a.buy-now {
+    top: 260px;
+}
+/* Het phan danh sach san pham*/
+footer{
+    background:var( --gray) ;
+    color: #000000;
+    padding: 9px 9px;
+    position: relative;
+    width: 100%;
+    height: 340px;
+    display: flex;
+    
+}
+footer h2{
+    font-family: 'Poppins',sans-serif;
+    font-weight: 650;
+    font-size: 30px;
+    color: #29531B;
+}
+footer .wrapper{
+    margin-right: 30px;
+    width: 40%;
+}
+footer a{
+    text-decoration: none;
+    color:#155F1C;   
+}
+
+footer .links2{
+    position: relative;
+    left: 650px;
+    bottom: 185px;
+}
+footer .links2 ul li{
+    list-style: none;
+    padding: 5px;
+}
+footer .links2 ul li a{
+    color: #000000;
+    text-decoration: none;
+    margin-bottom: 10px;
+    display:inline-table;
+}
+footer .links2 ul li a:hover{
+    color:#155F1C;
+}
+footer .links3{
+    position: relative;
+    left: 1000px;
+    bottom: 480px;
+}
+footer .links3 ul li{
+    list-style: none;
+    padding: 5px;
+}
+footer .links3 ul li a{
+    color: #000000;
+    text-decoration: none;
+    margin-bottom: 10px;
+    display:inline-table;
+}
+footer .links3 ul li a:hover{
+    color:#155F1C;
+}
+footer .social{
+   display: flex;
+   position:absolute;
+    left: 80%;
+    right: 18.33%;
+    top: 300px;
+    
+}
+footer .social a{
+    padding: 10px;
+}
+nav.mobile{
+    display: none;
+ }
+ .mobile-container{
+    display: none;}
+    @media(max-width:1024px)
+    {
+        .mobile-container{
+            display: none;
+         }
+        
+        header, header .wrapper{
+            max-height: 1000px;
+        }
+        
+        nav{
+            left: 0;
+            right: 0;
+            padding: 10px 0px;
+            width: 750px;
+            height: 50px;
+            justify-content: left;
+        }
+        nav.scrolled{
+            padding: 6px 0px;
+        }
+        p1{
+            font-weight: 900;
+            font-size: 18px;
+            line-height: 25px;
+            width: 130px;
+        }
+        nav ul{
+            gap: 10px;
+        }
+        nav ul li a{
+            font-weight: 500;
+            font-size: 12px;
+        }
+        nav img{
+            width: 8px;
+            height: 8px;
+        }
+        /* Cua hang*/
+        .cuahang{
+   
+            top: 100px;
+            width: 100%;
+            height: 80px;
+        }
+        .cuahang h3{
+            font-size: 20px;
+            line-height: 40px;
+            top: -13px;
+            left: 45%;
+        }
+         .cuahang ul h4{
+            font-size: 20px;
+            line-height: 40px;
+            left: 40%;
+         }
+         .cuahang ul .anh1{
+            height: 60px;
+            width: 150px;
+            
+        }
+        .cuahang ul .anh2{
+            height: 60px;
+            width: 150px;
+        }/* Danh muc*/
+       .left{
+        top: 200px;
+       }
+        .left .danhmuc{
+            height: 380px;
+            width: 200px;
+        }
+        .left h3{
+            text-align: center;
+            font-size: 15px;
+            padding-top: 15px;
+        }
+        .left .danhmuc ul li a{
+            padding-right: 15px;
+            font-size: 13px;
+        }
+        .left .danhmuc ul{
+            padding-top: 8px;
+            padding-left: 0px;
+        }
+        .left .danhmuc img{
+            top: 270px;
+            width: 150px;
+            height: 120px;
+        }
+        /* Het phan danh muc*/
+        .left .sanpham{
+            height: 550px;
+            width: 200px;
+        }
+        .left .sanpham img{
+            height: 50px;
+            width: 40px;
+        }
+        .left .sanpham ul li .product-infor a.product-name{
+            font-size: 12px;
+        }
+        .left .sanpham ul li .product-infor  .product-price{
+           font-size: 12px;
+        }
+        /* san pham*/
+        ul.products{
+            width: 500px;
+            height: 1000px;
+            padding-left: 200px;
+            padding-top: 200px;
+        }
+        .products img{
+            width: 150px;
+            height: 160px;
+        }
+        ul.products li{
+            width: 250px;
+            height: 250px;
+        }
+        ul.products li .product-item{
+            flex-basis: 50%;
+            padding-left: 50px;
+            padding-right: 50px;
+            margin-bottom: 30px;
+        }
+        ul.products li a.product-thumb{
+            width: 170px;
+            height: 180px;
+            background-color: #F7F7F7;
+        }
+        ul.products li .product-infor a.product-name{
+            font-size: 12px;
+          width: 130px;
+          padding-top: 5px;
+        padding-bottom: 5px;
+        }
+        
+        ul.products li .product-infor .product-price{
+            font-size: 12px;
+            width: 120px;
+        
+        }
+        ul.products .product-item .producttop {
+            position: relative;
+            overflow: hidden;
+        }
+        ul.products .product-item .producttop .product-thumb{
+            display: block;
+        }
+        ul.products .product-item .producttop a.buy-now{
+            text-transform: uppercase;
+            text-decoration: none;
+            text-align: center;
+            display: block;
+            background-color:#5776C5 ;
+            color:#FFFFFF;
+            padding: 4px 0;
+            position:absolute;
+            bottom: -35px;
+            width: 170px;
+            transition: 0.30s ease-in-out;
+            font-size: 12px;
+        
+        }
+        ul.products li:hover a.buy-now {
+            top: 150px;
+        }
+        /* footer */
+    
+        footer{
+            height: auto;
+            width: auto;
+    
+        }
+        footer h2{
+            font-size: 20px;
+        }
+        footer h3{
+            font-size: 15px;
+        }
+        footer .vector2{
+            font-size: 15px;
+        }
+        footer .links2{
+            position:static;
+        }
+        footer .links2 ul li{
+            padding: 2px 0;
+            font-size: 13px;
+    
+        }
+        footer .links3{
+            position: static;
+        }
+        footer .links3 ul li{
+            padding: 2px 0;
+            font-size: 13px;
+        }
+        footer .social{
+           position:relative;
+            left: 80%;
+            right: 18.33%;
+            top: 0px;
+    }
+        footer .social img{
+            padding-left: 10px;
+            padding-right: 10px;
+        }
+        nav.mobile{
+            display: none;
+        }
+    }
+    @media( max-width: 500px)
+{
+    nav{
+        display: none;
+    }
+    nav.mobile{
+        display: flex;
+    }
+    nav.mobile .menu-icon{
+        padding-left: 10px;
+        margin-left: 10px;
+    }
+    nav.mobile .logo{
+        font-size: 20px;
+        color: var(--green-color);
+        font-weight: 1000px;
+    }
+    nav.mobile.scrolled{
+        padding:  0px 10px;
+        background-color: var(--dark-gray);
+        box-shadow:  0 9px 21px -5px rgba(0,0,0,0.3);
+    }
+    .mobile-container{
+        position: fixed;
+        height:100vh;
+        width: 100%;
+        top: 0;
+        left: 100%;
+        background-color: #000000;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        z-index: 200;
+        transition: all 400ms ease;
+
+    }
+    .mobile-container.active{
+        left: 0;
+    }
+    .mobile-container .close-icon{
+        position: fixed;
+        top: 30px;
+       right: 10px;
+       opacity: 0;
+       margin-left: 50px;
+        padding-left: 100px;
+       pointer-events: none;
+       transition: all 400ms ease;
+
+    }
+    .mobile-container.active .close-icon{
+        opacity: 1;
+        pointer-events: auto;
+    }
+    .mobile-container ul{
+        list-style: none;
+        padding: 0;
+        margin-right: 150px;
+        padding-right: 150px;
+        border-bottom-width: 50px;
+        padding-bottom: 100px;
+    }
+    .mobile-container ul li{
+        margin: 30px 0;
+        text-align: center;
+    }
+    .mobile-container ul li a{
+        color: #FFFFFF;
+        text-decoration: none;
+        font-size: 13px;
+    }
+    /* Cua hang*/
+    .cuahang{
+   
+        top: 70px;
+        height: 50px;
+    }
+    .cuahang h3{
+        font-size: 15px;
+    }
+     .cuahang ul h4{
+        font-size: 15px;
+
+     }
+     .cuahang ul .anh1{
+        height: 50px;
+        width: 80px;
+        
+    }
+    .cuahang ul .anh2{
+        height: 50px;
+        width: 80px;
+    }/* Danh muc*/
+   .left{
+    top: 150px;
+   }
+    .left .danhmuc{
+        height: 350px;
+        width: 150px;
+    }
+    .left h3{
+        text-align: center;
+        font-size: 13px;
+        padding-top: 10px;
+    }
+    .left .danhmuc ul li a{
+        padding-right: 0;
+        font-size: 11px;
+    }
+    .left .danhmuc ul{
+        padding-top: 8px;
+        padding-left: 0px;
+    }
+    .left .danhmuc img{
+        top: 270px;
+        width: 120px;
+        height: 93px;
+    }
+     /* Het phan danh muc*/
+     .left .sanpham{
+        width: 150px;
+    }
+    .left .sanpham img{
+        height: 50px;
+        width: 40px;
+    }
+    .left .sanpham ul{
+        padding-left: 10px;
+    }
+    .left .sanpham ul li .product-infor a.product-name{
+        font-size: 10px;
+    }
+    .left .sanpham ul li .product-infor  .product-price{
+       font-size: 10px;
+    }
+    /* Sản phẩm*/
+    ul.products{
+        width: 400px;
+        height: auto;
+        padding-left: 200px;
+        padding-top: 150px;
+    }
+    /* Het san pham*/
+    footer .social{
+        position:relative;
+         left: 60%;
+         right: 18.33%;
+         top: 0px;
+ }
+     footer .social img{
+         padding-left: 10px;
+         padding-right: 10px;
+     }
+}

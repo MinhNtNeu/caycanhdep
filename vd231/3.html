@@ -1,0 +1,68 @@
+<!--<div id="div1">
+    <p id="p1">This is a paragraph.</p>
+    <p id="p2">This is another paragraph.</p>
+   </div>
+
+   <script>
+    var para = document.createElement("p");
+    para.innerHTML="New para"
+    para.style.backgroundColor="  #F6E3EF"
+    document.body.appendChild(para)
+    var div = document.getElementById("div1");
+  div.remove()
+  document.body.prepend(para)
+   </script>-->
+
+ <!-- <form name="myForm" action="/action_page.php" onsubmit="return validateForm()" method="post">
+    Name: <input type="text" name="fname">
+    <input type="submit" value="Submit">
+   </form>
+   <script>
+    function validateForm() {
+      if (document.forms["myForm"]["fname"].value == "") {
+        alert("Name must be filled out");
+        return false;
+      }
+    }
+   </script>
+   Number: <input id="id1" type="number" max="100" min="20">
+   <input type="submit" value="Submit" onClick="myFunction()">
+   <p id="demo"></p>
+  
+  <script>
+   for(let e in navigator){
+    document.write("<b>"+e + "</b>: " +navigator[e] +"<br>")
+   }
+   </script>
+   <script>
+     function showError(error) {
+   switch(error.code) {
+    case error.PERMISSION_DENIED:
+     x.innerHTML = "User denied the request for Geolocation."
+     break;
+    case error.POSITION_UNAVAILABLE:
+     x.innerHTML = "Location information is unavailable."
+     break;
+    case error.TIMEOUT:
+     x.innerHTML = "The request to get user location timed out."
+     break;
+    case error.UNKNOWN_ERROR:
+     x.innerHTML = "An unknown error occurred."
+     break;
+   }
+  }
+
+   </script>-->
+<script>
+    var xhttp = new XMLHttpRequest();
+    xhttp.onreadystatechange = function() {
+       
+  if (this.readyState == 4 && this.status == 200) {
+     let myObj=JSON.parse
+   
+  }
+ };
+    xhttp.open("POST", "// cai gi do khong biet")
+    let data=JSON.stringify({ name: "Nokia 1200",price:400})
+    xhttp.send();
+</script>

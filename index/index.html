@@ -1,0 +1,75 @@
+
+  <!DOCTYPE html>
+<html>
+ 
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<title>Kiểm tra tính hợp lệ của mail</title>
+</head>
+ 
+<body>
+<!--
+Phải có ký tự @
+Ký tự @ không nằm ở vị trí đầu
+Phải có ít nhất một dấu . trong địa chỉ mail
+Phải có ít nhất 1 ký tự giữa @ và dấu . cuối cùng
+Phải có ít nhất một ký tự sau dấu . cuối cùng
+Không có khoảng trắng trong địa chỉ mail
+-->
+<script>
+ function IsInvalidEmail(the_email) {
+ var at = the_email.indexOf("@");
+ var dot = the_email.lastIndexOf(".");
+ var space = the_email.indexOf(" ");
+ 
+if ((at != -1) && //có ký tự @
+ (at != 0) && //ký tự @ không nằm ở vị trí đầu
+ (dot != -1) && //có ký tự .
+ (dot > at + 1) && (dot < the_email.length - 1) //phải có ký tự nằm giữa @ và . cuối cùng
+ &&
+ (space == -1)) //không có khoẳng trắng 
+ {
+ alert("Email valid");
+ return true;
+ } else {
+ alert("Email Invalid");
+ return false;
+ }
+ }
+ </script>
+<form action="#" method="POST" onsubmit="var result = IsInvalidEmail(this.emailbox.value);return result;">
+<input type="text" name="emailbox" value="" placeholder="Nhập email">
+<button type="submit" value="Submit">Submit</button>
+</form>
+</body>
+ 
+</html>
+
+   </script>
+
+  <form name="myForm" action="/action_page.php" onsubmit="return validateForm()" method="post">
+    Name: <input type="text" name="fname">
+    <input type="submit" value="Submit">
+   </form>
+   <script>
+    function validateForm() {
+      if (document.forms["myForm"]["fname"].value == " ") {
+        alert("Name must be filled out");
+        return false;
+      }
+    }
+   
+    </script>
+
+
+</body>
+</html>
+
+  <button id="myButton" class="float-left submit-button" >Home</button>
+
+<script type="text/javascript">
+    document.getElementById("myButton").onclick = function () {
+        location.href = "www.yoursite.com";
+    };
+</script>
