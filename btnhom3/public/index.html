@@ -6,6 +6,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Trang chu</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
+    <script src="https://www.gstatic.com/firebasejs/8.4.3/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.4.3/firebase-database.js"></script>
+
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;900&display=swap" rel="stylesheet">
 
@@ -33,13 +36,13 @@
                         <a href="dichvu1.html"> Dịch vụ </a>
                     </li>
                     <li>
-                        <a href="#"> Kinh nghiệm </a>
+                        <a href="lienhe.html"> Kinh nghiệm </a>
                     </li>
                     <li>
-                        <a href="#"> Hỏi đáp </a>
+                        <a href="lienhe.html"> Hỏi đáp </a>
                     </li>
                     <li>
-                        <a href="">
+                        <a href="lienhe.html">
                         <img src="images/Vector (4).svg" alt="" width="15px" height="20px"></a>
                     </li>
                     <li>
@@ -73,10 +76,10 @@
                             <a href="dichvu1.html"> Dịch vụ </a>
                         </li>
                         <li>
-                            <a href="#"> Kinh nghiệm </a>
+                            <a href="lienhe.html"> Kinh nghiệm </a>
                         </li>
                         <li>
-                            <a href="#"> Hỏi đáp </a>
+                            <a href="lienhe.html"> Hỏi đáp </a>
                         </li>
                      </ul>
                      
@@ -245,8 +248,8 @@
             </a>
             <a href="muangay.html" class="buy-now">Mua ngay</a>  </div>
             <div class="product-infor">
-                <a href="" class="product-name"> Cây lưỡi hổ lucky</a>
-                <div class="product-price"> 90.000 ₫</div>
+                <a id="test1" href="" class="product-name"> Cây lưỡi hổ lucky</a>
+                <div id="test2" class="product-price"> 90.000 ₫</div>
             </div>
       
 
@@ -318,6 +321,7 @@
       
         
      </ul>
+              
 <!-- Hết phần sản phẩm-->
 <img class="anhdk" src="images/anhdk.png" alt="" width="1570px" height="100px" >
      <div class="signin">
@@ -338,6 +342,7 @@
         </script>
       
      </div>
+     
  <!-- Hết phần đăng ký-->    
  <footer> 
     <div class="warpper">
@@ -373,13 +378,13 @@
                         <a href="https://bancaydep.com/" target="_blank"> Cửa hàng cây cảnh </a>
                     </li>
                     <li>
-                        <a href="#"> Hỏi đáp </a>
+                        <a href="lienhe.html"> Hỏi đáp </a>
                     </li>
                     <li>
                         <a href="dichvu1.html"> Dịch vụ </a>
                     </li>
                     <li>
-                        <a href="#"> Kinh nghiệm </a>
+                        <a href="lienhe.html"> Kinh nghiệm </a>
                     </li>
                 </ul>
             </div>
@@ -413,7 +418,43 @@
         </div>
     </div>
  </footer>
- <script src="trangchu.js"></script>
- <script src="public/firebase.js"></script>
+ <script>
+ var firebaseConfig = {
+         apiKey: "AIzaSyCIA1gK_kUFR9XGwb66eBAZlhO-FgeFcYU",
+        authDomain: "caycanhdep-75ee6.firebaseapp.com",
+         databaseURL: "https://caycanhdep-75ee6-default-rtdb.firebaseio.com",
+         projectId: "caycanhdep-75ee6",
+         storageBucket: "caycanhdep-75ee6.appspot.com",
+         messagingSenderId: "349451331615",
+         appId: "1:349451331615:web:154687aab127aae45bcd2a",
+         measurementId: "G-2MT8ZJ73SM"
+        };
+
+// Initialize Firebase
+        firebase.initializeApp(firebaseConfig);
+
+		// Get a reference to the database service
+		var database = firebase.database();
+      
+
+		database.ref("/product").limitToLast(1).on("value",function(snapshot) {
+    var firstUser = snapshot.val();
+    var firstName = Object.values(firstUser)[0].name;
+    var lastPrice = Object.values(firstUser).price;
+    console.log("First user's name:", firstName);
+    document.getElementById("test1").textContent = firstName;
+    console.log("First user's price", lastPrice);
+    document.getElementById("test2").textContent=lastPrice;
+
+  });
+		
+
+	
+ </script>
+ <script src="trangchu.js">
+            console.log("firbase 1");
+
+    
+ </script>
 </body>
 </html>
